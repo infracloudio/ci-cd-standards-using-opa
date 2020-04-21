@@ -1,4 +1,4 @@
-name: Pre-deploy validation of k8s resources.
+name: Opa tests
 on: [push]
 jobs:
   build:
@@ -10,4 +10,4 @@ jobs:
       env:
         MANIFESTS_PATH_PATTERN: test-data/good
         LIBRARY_PATH: test-data/policies
-        DATA: data.kubernetes.admission.deny 
+        DATA: data.kubernetes.admission.deny
