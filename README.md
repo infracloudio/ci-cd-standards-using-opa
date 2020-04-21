@@ -1,5 +1,5 @@
 # ci-cd-standards-using-opa
-![Build.](https://github.com/ameydev/ci-cd-standards-using-opa/workflows/Build./badge.svg?branch=master) ![Opa tests](https://github.com/ameydev/ci-cd-standards-using-opa/workflows/Opa%20tests/badge.svg?branch=master)
+[![Actions Status](https://github.com/ameydev/ci-cd-standards-using-opa/workflows/Build./badge.svg?branch=master)](https://github.com/ameydev/ci-cd-standards-using-opa/actions) [![Actions Status](https://github.com/ameydev/ci-cd-standards-using-opa/workflows/Opa%20tests/badge.svg?branch=master)](https://github.com/ameydev/ci-cd-standards-using-opa/actions)
 
 A github-action to validate your infrastructure configuration manifests (eg. kubernetes resource yaml manifests) following the CI-CD standards set using OpenPolicyAgent(OPA).
 
