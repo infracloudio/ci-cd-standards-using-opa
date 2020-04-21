@@ -1,0 +1,18 @@
+name: 'OPA-Test ci-cd manifests standards.'
+description: 'GitHub Action to test ci-cd standards using OPA. Validate the resource configurtions before deploying them.'
+branding:
+  icon: 'alert-triangle'
+  color: 'red'
+inputs:
+  MANIFESTS_PATH_PATTERN:
+    description: 'Path to a yaml file or directory' # eg. k8s/subpath/ or k8s/subpath/deploy.yaml
+    required: true
+  LIBRARY_PATH:
+    description: 'Path to ci-cd standards policy library.' # eg. policies/
+    required: true
+  DATA:
+    description: 'The Selective Data of policies' # eg. data.kubernetes.admission.deny
+    required: true
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
