@@ -1,11 +1,12 @@
-FROM ubuntu:18.04
+FROM ubuntu:latest
 
 RUN apt-get update && apt-get install -y \
     curl \
     bash 
 
 RUN curl -L -o opa https://openpolicyagent.org/downloads/latest/opa_linux_amd64
-RUN chmod +x opa && mv opa /usr/local/bin/
+
+RUN chmod 755 opa && mv opa /usr/local/bin/
 
 RUN opa version
 
