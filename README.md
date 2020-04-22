@@ -23,3 +23,9 @@ jobs:
         LIBRARY_PATH: opa-policies/ci-standards #path to your ci-cd policies.
         DATA: data.kubernetes.admission.deny # the policy data 
 ```
+
+TODO:
+- Chef and Puppet support
+- Update error logging
+- Test with multiple deny policies
+- Update README with variety of examples and explaination.
