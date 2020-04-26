@@ -1,5 +1,9 @@
 name: Opa tests
-on: [push]
+on:
+  push:
+    branches:
+      - master
+      - dev
 jobs:
   build:
     runs-on: ubuntu-latest

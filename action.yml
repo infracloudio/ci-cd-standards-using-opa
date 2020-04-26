@@ -13,6 +13,9 @@ inputs:
   DATA:
     description: 'The Selective Data of policies' # eg. data.kubernetes.admission.deny
     required: true
+  OPA_CMD:
+    description: 'Run any opa command manually.' # eg. opa test policies/
+    required: false
 runs:
   using: 'docker'
   image: 'Dockerfile'
