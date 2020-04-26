@@ -29,7 +29,7 @@ fi
 # Run opa manual command if present.
 if [ "$OPA_CMD" != "" ];
 then
-   sh -c "$*"
+   "$*"
 fi
 
 if [ "$IsFailed" = "true" ]; 
