@@ -6,5 +6,5 @@ jobs:
     steps:
     - uses: actions/checkout@master
     - name: Build action docker image
-      run: |
-        docker build . -t ameydev/ci-cd-standards-using-opa:latest
+#       run: |
+#         docker build . -t ameydev/ci-cd-standards-using-opa:latest
