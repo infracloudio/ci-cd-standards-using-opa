@@ -13,6 +13,6 @@ jobs:
     - name: OPA-Test ci-cd manifests standards.
       uses: ameydev/ci-cd-standards-using-opa@master
       env:
-        MANIFESTS_PATH_PATTERN: test-data/good
+        MANIFESTS_PATH_PATTERN: test-data/bad-deploy
         LIBRARY_PATH: test-data/policies
         DATA: data.kubernetes.admission.deny
